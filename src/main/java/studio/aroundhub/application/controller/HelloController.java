@@ -1,5 +1,6 @@
 package studio.aroundhub.application.controller;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 // 본 클래스가 포함하는 메서드들은 @ResponseBody를 붙인것처럼 ret값을 전송할수 있게된다
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class HelloController {
 
     //    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    @ApiOperation(value = "hello world 예제", notes = "RestController, GetMapping을 처음 사용해보는 예제")
     @GetMapping("hello")
     public String hello() {
         return "Hello, World!";
