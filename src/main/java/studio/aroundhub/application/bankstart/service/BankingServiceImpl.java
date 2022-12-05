@@ -12,7 +12,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class BankingServiceImpl implements BankingService {
 
-    private BankAccountRepository bankAccountRepository;
+    private final BankAccountRepository bankAccountRepository;
 
 
     @Override

@@ -11,11 +11,7 @@ import java.util.Optional;
 @Repository
 public class MemoryBankAccountRepository implements BankAccountRepository {
 
-    Map<Long, BankAccountDTO> memoryDB;
-
-    public MemoryBankAccountRepository() {
-        memoryDB = new HashMap<>();
-    }
+    Map<Long, BankAccountDTO> memoryDB = new HashMap<>();
 
     @Override
     public void save(BankAccountDTO bankAccountDTO) {
